@@ -1,5 +1,6 @@
 import React, { Fragment, useCallback, useEffect, useState } from 'react'
 import '../style/homepage.css'
+import { NavLink } from 'react-router-dom';
 
 function HomePage() {
 
@@ -58,8 +59,8 @@ function HomePage() {
                                 <h1>Dummy<span>JSON</span></h1>
                                 <h5>Get dummy/fake JSON data to use as placeholder in development or in prototype testing.</h5>
                                 <div className='content_btn'>
-                                    <button className='' type='btn'>View on Github</button>
-                                    <button className='' type='btn'>Read Docs</button>
+                                    <NavLink target='_blank' to='https://github.com/namdharayush/dummy_api'><button className='' type='btn'>View on Github</button></NavLink>
+                                    <NavLink to='/docs'><button className='' type='btn'>Read Docs</button></NavLink>
                                 </div>
                             </div>
                         </div>
